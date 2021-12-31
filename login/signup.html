@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration Form</div>
+        <form action="./connect.php" method="post">
+            <div class="user-details">
+                <div class="inputbox">
+                    <span class="details">FirstName</span>
+                    <input type="text" placeholder="Enter your firstname"  name="firstname"required>
+                </div>
+                <div class="inputbox">
+                    <span class="details">Lastname</span>
+                    <input type="text" placeholder="Enter your lastname" name="lastname" required>
+                </div>
+                <div class="inputbox">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your email" name="email" required>
+                </div>
+                <div class="inputbox">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter your number" name="number" required>
+                </div>
+                <div class="inputbox">
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Enter your password" name="password" required>
+                </div>
+                <div class="inputbox">
+                    <span class="details">Confirm Password</span>
+                    <input type="text" placeholder="confirm password" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <span class="gender-title">Gender</span>
+                <div class="catagory">
+                    <label for="">
+                       <input type="radio" name="gender" value="m" >Male</input>
+
+                     </label>
+                    <label for="">
+                        <input type="radio" name="gender" value="f" >Female</input>
+                        
+                     </label>
+                    <label for="">
+                        <input type="radio" name="gender" value="o" >Others</input>
+                        
+                    </label>
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
